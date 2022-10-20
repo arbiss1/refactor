@@ -8,7 +8,7 @@ import com.gildedrose.service.QualityService;
 
 public class GildedRoseUtils {
 
-    public GildedRose createsNewGildedRose(String name, int sellIn, int quality){
+    public GildedRose createsNewGildedRose(String name, int sellIn, int quality) {
         return new GildedRose(
             new Item[]{new Item(name, sellIn, quality)},
             new ItemService(new DaysService(), new QualityService()),

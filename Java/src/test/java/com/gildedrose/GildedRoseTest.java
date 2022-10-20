@@ -1,9 +1,8 @@
 package com.gildedrose;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import com.gildedrose.utils.GildedRoseUtils;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GildedRoseTest {
 
@@ -25,7 +24,7 @@ class GildedRoseTest {
 
     @Test
     void testUpdateQuality() {
-        GildedRose gildedRose = utils.createsNewGildedRose("Name", 1 , 0);
+        GildedRose gildedRose = utils.createsNewGildedRose("Name", 1, 0);
         gildedRose.updateQuality();
         assertEquals(1, gildedRose.items.length);
     }
@@ -86,7 +85,7 @@ class GildedRoseTest {
 
 
     @Test
-    public void dontChangeSulfurasValues(){
+    public void dontChangeSulfurasValues() {
         GildedRose gildedRose = utils.createsNewGildedRose("Sulfuras", 1, 49);
 
         gildedRose.updateQuality();

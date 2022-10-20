@@ -1,7 +1,7 @@
 package com.gildedrose.service;
 
-import com.gildedrose.model.Item;
 import com.gildedrose.enums.GlidedRoseTypes;
+import com.gildedrose.model.Item;
 
 public class QualityService {
 
@@ -35,7 +35,7 @@ public class QualityService {
 //        }
 //    }
 
-    public void increaseQuality(int quality, Item item){
+    public void increaseQuality(int quality, Item item) {
         item.quality += quality;
     }
 }

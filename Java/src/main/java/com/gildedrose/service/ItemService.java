@@ -1,14 +1,14 @@
 package com.gildedrose.service;
 
-import com.gildedrose.model.Item;
 import com.gildedrose.enums.GlidedRoseTypes;
+import com.gildedrose.model.Item;
 
 public class ItemService {
 
     private final DaysService daysService;
     private final QualityService qualityService;
 
-    public ItemService(DaysService daysService, QualityService qualityService){
+    public ItemService(DaysService daysService, QualityService qualityService) {
         this.daysService = daysService;
         this.qualityService = qualityService;
     }
