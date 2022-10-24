@@ -40,7 +40,7 @@ public class QualityService {
     }
 
     public int checkIfConcert(Item item){
-        if(item.name.equals(GlidedRoseTypes.BACKSTAGE_ITEM.value) && item.sellIn == 0){
+        if(item.name.equals(GlidedRoseTypes.BACKSTAGE_CONCERT_ITEM.value) && item.sellIn == 0){
             return item.quality = 0;
         }
         return item.quality;

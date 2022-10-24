@@ -48,7 +48,7 @@ class GildedRoseTest {
     }
 
     @Test
-    public void backstagePassesItemDecreasesSellByDayNumberEachTime() {
+    public void backstagePassesItemDecreasesQualityToZero() {
         GildedRose gildedRose = utils.createsNewGildedRose("Backstage passes", 1, 20);
 
         gildedRose.updateQuality();
@@ -63,6 +63,7 @@ class GildedRoseTest {
         gildedRose.updateQuality();
 
         assertEquals(-1, gildedRose.items[0].sellIn);
+        assertEquals(0, gildedRose.items[0].quality);
     }
 
     @Test
@@ -85,7 +86,7 @@ class GildedRoseTest {
 
 
     @Test
-    public void dontChangeSulfurasValues() {
+    public void sulfurasCantChange() {
         GildedRose gildedRose = utils.createsNewGildedRose("Sulfuras", 1, 49);
 
         gildedRose.updateQuality();
