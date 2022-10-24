@@ -49,11 +49,11 @@ class GildedRoseTest {
 
     @Test
     public void backstagePassesItemDecreasesSellByDayNumberEachTime() {
-        GildedRose gildedRose = utils.createsNewGildedRose("Concret", 0, 0);
+        GildedRose gildedRose = utils.createsNewGildedRose("Backstage passes", 1, 20);
 
         gildedRose.updateQuality();
 
-        assertEquals(-1, gildedRose.items[0].sellIn);
+        assertEquals(0, gildedRose.items[0].quality);
     }
 
     @Test

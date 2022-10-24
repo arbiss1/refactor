@@ -18,6 +18,8 @@ public class ItemService {
         if (!isLegendaryItem(item)) {
             //decrease the day
             daysService.sellByDayValueByOne(item);
+            //check after concert
+            qualityService.checkIfConcert(item);
             //check if day has passed
             if (daysService.sellByDayValueIsOverZero(item)) {
                 qualityService.updateQuality(item);
