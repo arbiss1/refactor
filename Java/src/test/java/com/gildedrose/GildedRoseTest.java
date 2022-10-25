@@ -48,8 +48,8 @@ class GildedRoseTest {
     }
 
     @Test
-    public void backstagePassesItemDecreasesQualityToZero() {
-        GildedRose gildedRose = utils.createsNewGildedRose("Backstage passes", 1, 20);
+    public void backstagePassesItemDecreasesQualityToZeroWhenConcert() {
+        GildedRose gildedRose = utils.createsNewGildedRose("Backstage passes, concert", 1, 20);
 
         gildedRose.updateQuality();
 

@@ -7,8 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TextFixtureTest {
 
-    public GildedRoseUtils utils = new GildedRoseUtils();
-
+    public final GildedRoseUtils utils = new GildedRoseUtils();
 
     //+5 Dexterity Vest
     @Test
